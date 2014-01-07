@@ -1,11 +1,11 @@
 ---
 layout: default
-title: BikeSD: Year 1 Annual Report
+title: Code for America 2013 Annual Report
 ---
 
 <div id="loading">
-  <img src="img/CfA_logo_white.png" />
-  <h1>2012</h1> 
+  <img src="http://bikesd.org/wp-content/uploads/2013/05/BikeSD-logo.jpg" height="200" />
+  <h1>BikeSD Year 1</h1> 
   <p>Annual Report</p>
 </div>
 
@@ -71,7 +71,6 @@ title: BikeSD: Year 1 Annual Report
   {% for p in site.posts %}
 
   {% if p.url != "/index.html" %}
-  <a name="{{ p.section }}"></a>
   <div class="page {{ p.pagetype }}" style="background-color:#{{ p.bgslide }};padding-top:{{ p.extrapadding }}" data-section="nav{{ p.section }}">
     {{ p.content | markdownify }}
     <div class="clear"></div>  
