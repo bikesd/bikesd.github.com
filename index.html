@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Code for American Annual Report
+title: Code for America 2012 Annual Report
 ---
 
 <div id="loading">
@@ -28,7 +28,7 @@ title: Code for American Annual Report
           <li class="navbrigade"><a href="#">Brigade</a></li>
           <li class="navaccelerator"><a href="#">Accelerator</a></li>
           <li class="navpeernetwork"><a href="#">Peer Network</a></li>
-          <li class="navfoundersnote"><a href="#">Sam's Note</a></li>
+          <li class="navfoundersnote"><a href="#">Jen's Note</a></li>
           <li class="navpeople"><a href="#">People</a></li>
           <li class="navfinancials"><a href="#">Financials</a></li>
         </ul> <!-- nav -->
@@ -71,7 +71,6 @@ title: Code for American Annual Report
   {% for p in site.posts %}
 
   {% if p.url != "/index.html" %}
-  <a name="{{ p.section }}"></a>
   <div class="page {{ p.pagetype }}" style="background-color:#{{ p.bgslide }};padding-top:{{ p.extrapadding }}" data-section="nav{{ p.section }}">
     {{ p.content | markdownify }}
     <div class="clear"></div>  
